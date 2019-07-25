@@ -12,4 +12,12 @@ describe FizzBuzz do
 
     expect(converted_number).to eq 'fizz'
   end
+
+  it "Return 'buzz' when number is multiple of 5" do
+    number = 5
+
+    converted_number = fizzbuzz.convert(number)
+
+    expect(converted_number).to eq 'buzz'
+  end
 end
