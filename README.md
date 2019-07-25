@@ -6,4 +6,4 @@ Exercício sobre aplicação de TDD
 
 ## Índice:
 
- - [Como Rodar](readme/INSTALLATION.md)
+ - [Como Instalar e Executar](documentation/INSTALLATION.md)
