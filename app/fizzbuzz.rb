@@ -5,7 +5,11 @@
 class FizzBuzz
   # attr_accessor :number
 
-  def convert(_number)
-    'fizz'
+  def convert(number)
+    if (number % 5).zero?
+      'buzz'
+    else
+      'fizz'
+    end
   end
 end
