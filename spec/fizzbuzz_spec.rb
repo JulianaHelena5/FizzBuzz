@@ -21,11 +21,19 @@ describe FizzBuzz do
     expect(converted_number).to eq 'buzz'
   end
 
-  it "Return 'fizzbuzz' when number is multiple of 3 and 5" do
+  it "Return 'fizzbuzz' when number is multiple of 3 or 5" do
     number = 15
 
     converted_number = fizzbuzz.convert(number)
 
     expect(converted_number).to eq 'fizzbuzz'
+  end
+
+  it 'Return the same number when number is not multiple of 3 or 5' do
+    number = 7
+
+    converted_number = fizzbuzz.convert(number)
+
+    expect(converted_number).to eq number.to_s
   end
 end
