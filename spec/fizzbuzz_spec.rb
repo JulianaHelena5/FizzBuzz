@@ -4,7 +4,6 @@ require_relative '../app/fizzbuzz'
 
 describe FizzBuzz do
   let(:fizzbuzz) { FizzBuzz.new }
-
   it "Return 'fizz' when number is multiple of 3" do
     number = 3
 
@@ -35,5 +34,13 @@ describe FizzBuzz do
     converted_number = fizzbuzz.convert(number)
 
     expect(converted_number).to eq number.to_s
+  end
+
+  it 'Return a error if the number is negative' do
+    number = -1
+
+    converted_number = fizzbuzz.convert(number)
+
+    expect(converted_number).to raise_error
   end
 end
