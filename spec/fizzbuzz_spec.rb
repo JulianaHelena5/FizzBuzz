@@ -20,4 +20,12 @@ describe FizzBuzz do
 
     expect(converted_number).to eq 'buzz'
   end
+
+  it "Return 'fizzbuzz' when number is multiple of 3 and 5" do
+    number = 15
+
+    converted_number = fizzbuzz.convert(number)
+
+    expect(converted_number).to eq 'fizzbuzz'
+  end
 end
