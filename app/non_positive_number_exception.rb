@@ -3,7 +3,7 @@
 #
 # Classe que define um novo tipo de excecao
 class NonPositiveNumberException < StandardError
-  def initialize(msg = 'O número não pode ser negativo!')
+  def initialize(msg = 'The number can not be negative!')
     super
   end
 end
