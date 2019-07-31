@@ -39,8 +39,6 @@ describe FizzBuzz do
   it 'Return a error if the number is negative' do
     number = -1
 
-    converted_number = fizzbuzz.convert(number)
-
-    expect(converted_number).to raise_error
+    expect { fizzbuzz.convert(number) }.to raise_error(StandardError)
   end
 end
