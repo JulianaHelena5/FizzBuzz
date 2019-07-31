@@ -4,9 +4,13 @@
 # Classe que define o FizzBuzz
 class FizzBuzz
   def convert(number)
-    converted_number = ''
-
     raise StandardError, 'The number can not be negative' if number.negative?
+
+    build_fizz_buzz(number)
+  end
+
+  def build_fizz_buzz(number)
+    converted_number = ''
 
     converted_number += 'fizz' if multiple_of_3?(number)
     converted_number += 'buzz' if multiple_of_5?(number)
